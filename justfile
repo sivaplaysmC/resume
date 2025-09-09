@@ -2,8 +2,8 @@ set dotenv-load := true
 
 resume:
     typst compile \
-      --input mailto_url="${MAILTO_URL}" \
-      --input mail="${MAIL}" \
+      --input mailto_url="${MAIL_TO_URL}" \
+      --input mail="${MAIL_}" \
       --input tel_url="${TEL_URL}" \
       --input tel="${TEL}" \
       --input linkedin_url="${LINKEDIN_URL}" \
@@ -14,8 +14,8 @@ resume:
 
 watch:
     typst watch \
-      --input mailto_url="${MAILTO_URL}" \
-      --input mail="${MAIL}" \
+      --input mailto_url="${MAIL_TO_URL}" \
+      --input mail="${MAIL_}" \
       --input tel_url="${TEL_URL}" \
       --input tel="${TEL}" \
       --input linkedin_url="${LINKEDIN_URL}" \
