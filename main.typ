@@ -18,10 +18,11 @@
 )
 
 #pad(top: 10pt)[
-  Cybersecurity enthusiast with a strong focus on binary exploitation and reverse engineering.
-  Skilled in low-level system analysis to uncover vulnerabilities and strengthen defenses,
-  while committed to ethical research, continuous learning, and contributing to the development of safer software.
+  Cybersecurity enthusiast specializing in binary exploitation and reverse engineering, dedicated to uncovering vulnerabilities and building safer software.
 ]
+
+= Education
+#education(degree: "Bachelor of Computer Science and Engineering", institution: "Rajalakshmi Engineering College", from: "September 2023", to: "Present", grade: "CGPA: 7.89" )
 
 = Experience
 
@@ -61,16 +62,13 @@
   ]
 ]
 
-= Education
-
-#education(degree: "Bachelor of Computer Science and Engineering", institution: "Rajalakshmi Engineering College", from: "September 2023", to: "Present", grade: "CGPA: 7.89" )
 
 = Achievements
+#achievement("Smart India Hackathon 2024", category: "Hackathon", position: "Winner", date: "December 2024")
+#achievement("NCIIPC-AICTE Pentathon 2025", category: "Capture The Flag", position: "Finalist", date: "April 2025")
+#achievement("UST Gencys CTF 2025", category: "Capture the flag", position: "Top 7", date: "December 2024")
 
-#achievement("Smart India Hackathon 2024", category: "Hackathon", position: "Winner", date: "December 2024")[
-  Programmed the *_backend component_* for a *Smart Classroom Management System*, which helped my team secure *1st place*.
-]
+= Skills
 
-#achievement("NCIIPC-AICTE Pentathon 2025", category: "Capture The Flag", position: "Finalist", date: "April 2025")[
-  Solved *Binary exploitation, reverse-engineering* and miscellaneous CTF challenges. My team secured *rank 25 all over India*.
-]
+1. Reverse engineering with Ghidra, Ida Pro, Radare2, GDB.
+2. EDR Evasion with zig, C, C++ and Rust.
