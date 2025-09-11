@@ -21,8 +21,8 @@
 
       // TODO: The dots are not appearing properly. Should fix this later.
       // second column: dots
-      // if lang != none { repeat(h(0.1em) + "." + h(0.1em)) } else { [] },
-      [],
+      if lang != none { repeat(h(0.1em) + "." + h(0.1em)) } else { [] },
+      // [],
 
       // third column: main technology
       text(
@@ -58,14 +58,14 @@
 }
 
 
-#let achievement(title, position: none, category: none, date: none, body) = {
+#let achievement(title, position: none, category: none, date: none) = {
   block(
     below: 12pt,
     above: 5pt,
     breakable: false,
 
     grid(
-      columns: (auto, 1fr, auto),
+      columns: (1fr, 1fr, 1fr),
       column-gutter: (0.5em, 0.5em),
       row-gutter: 0.4em,
       align: (left + horizon, horizon, right + horizon),
@@ -77,12 +77,14 @@
         title
       ),
 
-      // second column: empty space
-      text(
-        weight: "semibold",
-        size: 11pt,
-        category
-      ),
+      // second column: category
+      align(center)[
+        #text(
+          weight: "semibold",
+          size: 11pt,
+          category
+        )
+      ],
 
       // third column: position
       text(
@@ -90,11 +92,6 @@
         size: 11pt,
         if position != none { position } else { [] }
       ),
-
-
-      // second (or third) row: description/details
-      grid.cell(colspan: 3, body),
-
     )
   )
 }
